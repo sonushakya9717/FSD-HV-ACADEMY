@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server":"nodemon server"
+    "server": "nodemon server"
   },
   "author": "sonu shakya",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "config": "^3.3.6",
     "express": "^4.17.1",
     "express-validator": "^6.10.1",
-    "gravator": "^1.0.2",
+    "gravatar": "^1.8.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.7",
     "request": "^2.88.2"

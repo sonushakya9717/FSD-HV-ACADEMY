@@ -1,3 +1,4 @@
 {
-    "mongoURL":"mongodb+srv://sonu123:f5upDcgU8p9l7tsM@devconnector.32pm5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURL":"mongodb+srv://sonu123:f5upDcgU8p9l7tsM@devconnector.32pm5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken1234"
 }
