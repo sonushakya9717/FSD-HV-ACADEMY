@@ -1,4 +1,6 @@
 {
     "mongoURL":"mongodb+srv://sonu123:f5upDcgU8p9l7tsM@devconnector.32pm5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "jwtSecret":"mysecrettoken1234"
+    "jwtSecret":"mysecrettoken1234",
+    "githubClientId":"438c99046a922c5b41bb",
+    "githubsecret":"e00a57a3f81339d2941ff474e31fc5ab36fd570f"
 }

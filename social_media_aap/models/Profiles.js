@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+
 const profileSchema = new mongoose.Schema({
     user:{
     type:mongoose.Schema.Types.ObjectId,
@@ -67,7 +68,7 @@ const profileSchema = new mongoose.Schema({
                 type: String,
                 required:true
             },
-            feildofstudy:{
+            fieldofstudy:{
                 type: String,
                 required: true
             },
