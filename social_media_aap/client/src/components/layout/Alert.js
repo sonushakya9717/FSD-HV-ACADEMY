@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Register from "../auth/Register";
 import { connect } from "react-redux";
 const Alert = ({ alerts }) => {
   return (
