@@ -6,6 +6,7 @@ const router = express.Router();
 const { check, validationResult } = require('express-validator');
 const Profile = require('../../models/Profiles')
 const User = require('../../models/User');
+const Post = require('../../models/Post');
 const { json } = require('express');
 
 
@@ -139,9 +140,11 @@ router.get('/user/:user_id', async (req, res) => {
 
 
 // delete Profile, user and posts
-// get all the profiles
+    
 router.delete('/', auth, async (req, res) => {
     try {
+        // remove users posts
+        await Post.deleteMany({ user: req.user.id })
         // remove profile
         await Profile.findOneAndDelete({ user: req.user.id });
 
@@ -306,7 +309,7 @@ router.delete('/education/:edu_id', auth,
             profile.education.splice(remove_index, 1);
 
             await profile.save()
-            res.json(profile.education)
+           return res.json(profile.education)
         } catch (err) {
             console.error(err.message)
             res.send('Server Error')

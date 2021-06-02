@@ -43,7 +43,7 @@ const EditProfile = ({
         linkedin: loading || !profile.linkedin ? ' ' : profile.linkedin,
         twitter: loading || !profile.twitter ? ' ' : profile.twitter,
       })
-  },[loading])
+  },[loading, getCurrentProfile])
 
   const {
     company,

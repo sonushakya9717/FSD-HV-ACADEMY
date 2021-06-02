@@ -9,7 +9,7 @@ import {
     LOGIN_FAIL,
     LOGIN_SUCCESS,
     LOGOUT,
-    CLEAR_PROFILE
+    CLEAR_PROFILE,
 } from './types';
 
  
