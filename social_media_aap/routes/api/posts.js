@@ -154,7 +154,7 @@ router.put('/unlike/:post_id', auth, async (req, res) => {
 
 
 
-//Post @route api/Post/comment/:post_id
+//Post @route api/post/comment/:post_id
 // Comment on a post
 router.post('/comment/:post_id', [auth, [
     check('text', 'Text is required')

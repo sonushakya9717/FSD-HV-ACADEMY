@@ -1,4 +1,4 @@
-import React, { Fragment, Profiler, useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import propTypes from "prop-types";
 import { connect } from "react-redux";
